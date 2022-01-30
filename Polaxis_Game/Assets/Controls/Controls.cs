@@ -55,7 +55,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Menu"",
+                    ""name"": ""Pause"",
                     ""type"": ""Button"",
                     ""id"": ""636abd14-da09-48a3-899c-a4adb75a296d"",
                     ""expectedControlType"": ""Button"",
@@ -194,7 +194,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Menu"",
+                    ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -263,7 +263,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         m_Player_Pointer = m_Player.FindAction("Pointer", throwIfNotFound: true);
         m_Player_Left_Click = m_Player.FindAction("Left_Click", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
-        m_Player_Menu = m_Player.FindAction("Menu", throwIfNotFound: true);
+        m_Player_Pause = m_Player.FindAction("Pause", throwIfNotFound: true);
         m_Player_Space = m_Player.FindAction("Space", throwIfNotFound: true);
         m_Player_Spawn_Positive = m_Player.FindAction("Spawn_Positive", throwIfNotFound: true);
         m_Player_Spawn_Negative = m_Player.FindAction("Spawn_Negative", throwIfNotFound: true);
@@ -331,7 +331,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Pointer;
     private readonly InputAction m_Player_Left_Click;
     private readonly InputAction m_Player_Move;
-    private readonly InputAction m_Player_Menu;
+    private readonly InputAction m_Player_Pause;
     private readonly InputAction m_Player_Space;
     private readonly InputAction m_Player_Spawn_Positive;
     private readonly InputAction m_Player_Spawn_Negative;
@@ -344,7 +344,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         public InputAction @Pointer => m_Wrapper.m_Player_Pointer;
         public InputAction @Left_Click => m_Wrapper.m_Player_Left_Click;
         public InputAction @Move => m_Wrapper.m_Player_Move;
-        public InputAction @Menu => m_Wrapper.m_Player_Menu;
+        public InputAction @Pause => m_Wrapper.m_Player_Pause;
         public InputAction @Space => m_Wrapper.m_Player_Space;
         public InputAction @Spawn_Positive => m_Wrapper.m_Player_Spawn_Positive;
         public InputAction @Spawn_Negative => m_Wrapper.m_Player_Spawn_Negative;
@@ -368,9 +368,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Move.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
                 @Move.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
                 @Move.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
-                @Menu.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
-                @Menu.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
-                @Menu.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
+                @Pause.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
                 @Space.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpace;
                 @Space.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpace;
                 @Space.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpace;
@@ -399,9 +399,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
-                @Menu.started += instance.OnMenu;
-                @Menu.performed += instance.OnMenu;
-                @Menu.canceled += instance.OnMenu;
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
                 @Space.started += instance.OnSpace;
                 @Space.performed += instance.OnSpace;
                 @Space.canceled += instance.OnSpace;
@@ -426,7 +426,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         void OnPointer(InputAction.CallbackContext context);
         void OnLeft_Click(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
-        void OnMenu(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
         void OnSpace(InputAction.CallbackContext context);
         void OnSpawn_Positive(InputAction.CallbackContext context);
         void OnSpawn_Negative(InputAction.CallbackContext context);
