@@ -71,6 +71,33 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Spawn_Positive"",
+                    ""type"": ""Button"",
+                    ""id"": ""b18989a8-6d79-482d-b23d-20af7fbf74b6"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Spawn_Negative"",
+                    ""type"": ""Button"",
+                    ""id"": ""e0577919-4a82-416e-ab3b-35a6a28108bb"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Reset"",
+                    ""type"": ""Button"",
+                    ""id"": ""34150a4e-8b77-438b-9d40-7ae53f8ca9f5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -172,6 +199,39 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""action"": ""Space"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5cee9126-8815-4bdb-bb09-7da582eed0cb"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Spawn_Positive"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f8313e18-d080-44cc-a414-2682adc755ab"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Spawn_Negative"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""efb3285a-42b0-4db4-98fd-bcbda67dd450"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Reset"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -185,6 +245,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Menu = m_Player.FindAction("Menu", throwIfNotFound: true);
         m_Player_Space = m_Player.FindAction("Space", throwIfNotFound: true);
+        m_Player_Spawn_Positive = m_Player.FindAction("Spawn_Positive", throwIfNotFound: true);
+        m_Player_Spawn_Negative = m_Player.FindAction("Spawn_Negative", throwIfNotFound: true);
+        m_Player_Reset = m_Player.FindAction("Reset", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -249,6 +312,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Menu;
     private readonly InputAction m_Player_Space;
+    private readonly InputAction m_Player_Spawn_Positive;
+    private readonly InputAction m_Player_Spawn_Negative;
+    private readonly InputAction m_Player_Reset;
     public struct PlayerActions
     {
         private @Controls m_Wrapper;
@@ -258,6 +324,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Menu => m_Wrapper.m_Player_Menu;
         public InputAction @Space => m_Wrapper.m_Player_Space;
+        public InputAction @Spawn_Positive => m_Wrapper.m_Player_Spawn_Positive;
+        public InputAction @Spawn_Negative => m_Wrapper.m_Player_Spawn_Negative;
+        public InputAction @Reset => m_Wrapper.m_Player_Reset;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -282,6 +351,15 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Space.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpace;
                 @Space.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpace;
                 @Space.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpace;
+                @Spawn_Positive.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpawn_Positive;
+                @Spawn_Positive.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpawn_Positive;
+                @Spawn_Positive.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpawn_Positive;
+                @Spawn_Negative.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpawn_Negative;
+                @Spawn_Negative.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpawn_Negative;
+                @Spawn_Negative.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpawn_Negative;
+                @Reset.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnReset;
+                @Reset.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnReset;
+                @Reset.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnReset;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -301,6 +379,15 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Space.started += instance.OnSpace;
                 @Space.performed += instance.OnSpace;
                 @Space.canceled += instance.OnSpace;
+                @Spawn_Positive.started += instance.OnSpawn_Positive;
+                @Spawn_Positive.performed += instance.OnSpawn_Positive;
+                @Spawn_Positive.canceled += instance.OnSpawn_Positive;
+                @Spawn_Negative.started += instance.OnSpawn_Negative;
+                @Spawn_Negative.performed += instance.OnSpawn_Negative;
+                @Spawn_Negative.canceled += instance.OnSpawn_Negative;
+                @Reset.started += instance.OnReset;
+                @Reset.performed += instance.OnReset;
+                @Reset.canceled += instance.OnReset;
             }
         }
     }
@@ -312,5 +399,8 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnMenu(InputAction.CallbackContext context);
         void OnSpace(InputAction.CallbackContext context);
+        void OnSpawn_Positive(InputAction.CallbackContext context);
+        void OnSpawn_Negative(InputAction.CallbackContext context);
+        void OnReset(InputAction.CallbackContext context);
     }
 }

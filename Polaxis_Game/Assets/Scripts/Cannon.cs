@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Cannon : MonoBehaviour
+public class Cannon : MonoBehaviour, IReset
 {
     private Controls controls;
 
     public Transform barrel;
     public GameObject ammo;
     public float power;
+
+    private GameObject active_ball;
 
     private void Awake()
     {
@@ -21,12 +23,19 @@ public class Cannon : MonoBehaviour
     private void Request_Cannon_Fire(InputAction.CallbackContext context)
     {
         Fire_Cannon();
+        Game_Manager.instance.Attempt_Completion();
         controls.Player.Space.Disable();
     }
 
     private void Fire_Cannon()
     {
-        GameObject obj = Instantiate(ammo, barrel.position, Quaternion.identity);
-        obj.GetComponent<Rigidbody2D>().AddForce(transform.up * (power * 100), ForceMode2D.Force);
+        active_ball = Instantiate(ammo, barrel.position, Quaternion.identity);
+        active_ball.GetComponent<Rigidbody2D>().AddForce(transform.up * (power * 100), ForceMode2D.Force);
+    }
+
+    public void Reset()
+    {
+        Destroy(active_ball);
+        controls.Player.Space.Enable();
     }
 }
