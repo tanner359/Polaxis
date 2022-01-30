@@ -12,6 +12,7 @@ public class Player_Controller : MonoBehaviour, IControllable
     //Moving Blocks
     private GameObject holding;
     public LayerMask Movable;
+    public GameObject trash;
 
 
     private void OnEnable()
@@ -21,10 +22,28 @@ public class Player_Controller : MonoBehaviour, IControllable
         controls.Player.Spawn_Negative.performed += Request_Negative_Spawn;
         controls.Player.Left_Click.performed += Request_Pickup;
         controls.Player.Left_Click.canceled += Request_Placement;
+        controls.Player.Right_Click.performed += Request_Delete;
         controls.Player.Spawn_Negative.Enable();
         controls.Player.Spawn_Positive.Enable();
         controls.Player.Left_Click.Enable();
+        controls.Player.Right_Click.Enable();
         controls.Player.Pointer.Enable();
+    }
+
+    private void Request_Delete(InputAction.CallbackContext obj)
+    {
+        Vector2 target = Camera.main.ScreenToWorldPoint(controls.Player.Pointer.ReadValue<Vector2>());
+        RaycastHit2D hit = Physics2D.Raycast(target, Vector3.forward * 1, 1f, Movable);
+        if (hit.collider) { StartCoroutine(Delete(hit.collider.gameObject)); }
+    }
+
+    private IEnumerator Delete(GameObject obj)
+    {
+        while(obj != null)
+        {
+            obj.transform.position = Vector2.Lerp(obj.transform.position, trash.transform.position, 0.01f);
+            yield return new WaitForEndOfFrame();
+        }
     }
 
     private void Start()
@@ -39,15 +58,15 @@ public class Player_Controller : MonoBehaviour, IControllable
 
     private void Request_Placement(InputAction.CallbackContext obj)
     {
+        Vector2 target = Camera.main.ScreenToWorldPoint(controls.Player.Pointer.ReadValue<Vector2>());
+        RaycastHit2D hit = Physics2D.Raycast(target, Vector3.forward * 1, 1f);
         if (holding) {holding = null;}
     }
 
     private void Request_Pickup(InputAction.CallbackContext obj)
     {
         Vector2 target = Camera.main.ScreenToWorldPoint(controls.Player.Pointer.ReadValue<Vector2>());
-        Debug.Log(target);
         RaycastHit2D hit = Physics2D.Raycast(target, Vector3.forward * 1, 1f, Movable);
-        Debug.DrawRay(target, Vector3.forward * 1, Color.green);
         if (hit.collider) { holding = hit.collider.gameObject; }
     }
 

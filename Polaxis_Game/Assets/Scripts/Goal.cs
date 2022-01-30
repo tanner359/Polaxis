@@ -23,8 +23,9 @@ public class Goal : MonoBehaviour
         if (target)
         {
             //animator.SetTrigger("Score_Clip");
-            Destroy(target);
+            Destroy(target.gameObject);
             Game_Manager.instance.Complete_Level();
+            Debug.Log("YOU WIN");
         }
     }
 

@@ -131,4 +131,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barrel: {fileID: 8474404488237782416}
   ammo: {fileID: 2877647571913231939, guid: c6accbb6b30a9c144a81785deeddc9c6, type: 3}
-  power: 300
+  power: 500

@@ -22,9 +22,22 @@ public class Level_Data : ScriptableObject
     public int Max_Score = 10000;
     public int Node_Penalty = 100;
     public int Time_Penalty = 200;
+    public Record[] best_scores = new Record[10];
 
     private int f_score;
     public int Score{
         get { return (int)(Mathf.Pow(Completion_Time, 1.3f) * (-Time_Penalty) + Magnet_Count * (-Node_Penalty)) + Max_Score; }
+    }
+}
+
+[System.Serializable]
+public class Record{
+    public string scorer_name;
+    public int best_score;
+
+    public Record(string name, int score)
+    {
+        scorer_name = name;
+        best_score = score;
     }
 }

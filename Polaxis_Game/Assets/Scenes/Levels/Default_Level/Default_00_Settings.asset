@@ -12,12 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8283c0f0d4034bd42b5c829bf47edf19, type: 3}
   m_Name: Default_00_Settings
   m_EditorClassIdentifier: 
-  isComplete: 0
+  isComplete: 1
   Positive_Prefab: {fileID: 5367913955393829120, guid: 0ee7a188050712d4fb8cd74dfd59c281, type: 3}
   Negative_Prefab: {fileID: 3024422664823158701, guid: 115d2bb916704e34289f88dbcb7a9180, type: 3}
   Magnet_Limit: 10
   Magnet_Count: 0
-  max_time: 10
+  max_time: 20
   Max_Score: 10000
   Node_Penalty: 100
   Time_Penalty: 200
+  best_scores:
+  - scorer_name: Keqing
+    best_score: 9359
+  - scorer_name: Anthony
+    best_score: 9352
+  - scorer_name: Morty
+    best_score: 9351
+  - scorer_name: John
+    best_score: 9349
+  - scorer_name: Phil
+    best_score: 9345
+  - scorer_name: Rick
+    best_score: 9343
+  - scorer_name: Spangbob
+    best_score: 9342
+  - scorer_name: Jen
+    best_score: 9334
+  - scorer_name: Greg
+    best_score: 9179
+  - scorer_name: Ben
+    best_score: 9160

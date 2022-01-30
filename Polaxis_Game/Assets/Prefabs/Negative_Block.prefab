@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1eea452517c2734793ca8b5c21bacc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  polar_force: 20
+  polar_force: 5
   range: 3
   show_range: 1
   targetable:
