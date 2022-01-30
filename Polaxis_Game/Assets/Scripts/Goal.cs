@@ -22,10 +22,9 @@ public class Goal : MonoBehaviour
         Collider2D target = Physics2D.OverlapBox((Vector2)transform.position + detection_Offset, detection_Size, 0, scorable);
         if (target)
         {
-            //animator.SetTrigger("Score_Clip");
+            animator.SetTrigger("Win");
             Destroy(target.gameObject);
             Game_Manager.instance.Complete_Level();
-            Debug.Log("YOU WIN");
         }
     }
 

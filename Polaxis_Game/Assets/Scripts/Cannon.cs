@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class Cannon : MonoBehaviour, IReset
 {
     private Controls controls;
+    public Animator animator;
 
     public Transform barrel;
     public GameObject ammo;
@@ -22,7 +23,7 @@ public class Cannon : MonoBehaviour, IReset
 
     private void Request_Cannon_Fire(InputAction.CallbackContext context)
     {
-        Fire_Cannon();
+        animator.SetTrigger("Fire");
         Game_Manager.instance.Attempt_Completion();
         controls.Player.Space.Disable();
     }
