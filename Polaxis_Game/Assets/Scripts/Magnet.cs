@@ -11,6 +11,13 @@ public class Magnet : MonoBehaviour
     public enum Polarity {Positive, Negative};
     public Polarity polarity;
 
+    private Controls controls;
+
+
+    private void Awake()
+    {
+        controls = controls == null ? new Controls() : controls;
+    }
 
     private void Update()
     {
