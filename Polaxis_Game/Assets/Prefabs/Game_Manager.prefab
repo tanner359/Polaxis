@@ -44,6 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 235d6d86ae69d3c499230dba77808e80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Level_Data: {fileID: 11400000, guid: c29791b2c074549439faf63071c1ca6a, type: 2}
+  Level_Data: {fileID: 11400000, guid: b6bc9d5f316d62e429e62a129018aba6, type: 2}
   timer: {fileID: 0}
   Completion_Window: {fileID: 0}
+  Pause_Window: {fileID: 0}
+  main_cam: {fileID: 0}
+  flag_cam: {fileID: 0}
+  next_level: Level_02
