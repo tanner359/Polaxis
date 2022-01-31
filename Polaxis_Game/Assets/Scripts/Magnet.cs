@@ -19,7 +19,7 @@ public class Magnet : MonoBehaviour
         controls = controls == null ? new Controls() : controls;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         Target_Search();
     }
