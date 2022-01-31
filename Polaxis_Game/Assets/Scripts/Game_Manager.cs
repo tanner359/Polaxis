@@ -139,5 +139,6 @@ public class Game_Manager : MonoBehaviour
         controls.Player.Reset.Disable();
         controls.Player.Pause.Disable();
         Level_Data.Magnet_Count = 0;
+        Time.timeScale = 1;
     }
 }
