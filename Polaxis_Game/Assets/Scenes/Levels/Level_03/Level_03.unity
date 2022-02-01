@@ -2403,6 +2403,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4055913245813897153, guid: 574ce1e2f54ab4149b8a2f030f6eb17f, type: 3}
+      propertyPath: trash
+      value: 
+      objectReference: {fileID: 4994659901126381232}
     - target: {fileID: 4055913245813897154, guid: 574ce1e2f54ab4149b8a2f030f6eb17f, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -2580,9 +2584,57 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Load_Level
       objectReference: {fileID: 0}
+    - target: {fileID: 6169838321166156280, guid: e5e71894e451e8a44a4c899e2ea103d7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8386652470292094899}
+    - target: {fileID: 6169838321166156280, guid: e5e71894e451e8a44a4c899e2ea103d7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Level_Select
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169838321166156280, guid: e5e71894e451e8a44a4c899e2ea103d7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Game_Manager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169838321166156280, guid: e5e71894e451e8a44a4c899e2ea103d7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169838321365955752, guid: e5e71894e451e8a44a4c899e2ea103d7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8386652470292094899}
+    - target: {fileID: 6169838321365955752, guid: e5e71894e451e8a44a4c899e2ea103d7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume_Game
+      objectReference: {fileID: 0}
     - target: {fileID: 6169838321430289933, guid: e5e71894e451e8a44a4c899e2ea103d7, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169838322604637973, guid: e5e71894e451e8a44a4c899e2ea103d7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169838322604637973, guid: e5e71894e451e8a44a4c899e2ea103d7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8386652470292094899}
+    - target: {fileID: 6169838322604637973, guid: e5e71894e451e8a44a4c899e2ea103d7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Load_Level
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169838322604637973, guid: e5e71894e451e8a44a4c899e2ea103d7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Game_Manager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169838322604637973, guid: e5e71894e451e8a44a4c899e2ea103d7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Main_Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169838322604637973, guid: e5e71894e451e8a44a4c899e2ea103d7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5e71894e451e8a44a4c899e2ea103d7, type: 3}
@@ -2594,6 +2646,11 @@ GameObject:
 --- !u!1 &4994659901126381231 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4994659901272402096, guid: e5e71894e451e8a44a4c899e2ea103d7, type: 3}
+  m_PrefabInstance: {fileID: 4994659901126381229}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4994659901126381232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4994659901175954825, guid: e5e71894e451e8a44a4c899e2ea103d7, type: 3}
   m_PrefabInstance: {fileID: 4994659901126381229}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8386652470292094898

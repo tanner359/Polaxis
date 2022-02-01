@@ -6,7 +6,7 @@ using TMPro;
 
 public class Completion_Window : MonoBehaviour
 {
-    private Level_Data level_Data;
+    [SerializeField] private Level_Data level_Data;
 
     public TMP_Text score;
     public TMP_Text magnet_count;
@@ -20,8 +20,9 @@ public class Completion_Window : MonoBehaviour
     public TMP_InputField input_field;
 
     private void OnEnable()
-    {
+    {     
         level_Data = Game_Manager.instance.Level_Data;
+        Load();
         score.text = "SCORE: " + level_Data.Score;
         magnet_count.text = "Magnets x " + level_Data.Magnet_Count;
         time_completed.text = "Time: " + level_Data.Completion_Time;
@@ -32,6 +33,19 @@ public class Completion_Window : MonoBehaviour
             new_record.SetActive(true);
         }
         Update_Leaderboard();
+        Save();
+    }
+
+    public void Save()
+    {
+        SaveSystem.Save_Level_Data(new Level_Save_Package(level_Data));
+    }
+
+    public void Load()
+    {
+        Level_Save_Package data = SaveSystem.Load_Level_Data(level_Data.name);
+        if (data == null) { return; }
+        level_Data.best_scores = data.leaderboards;
     }
 
     bool entry_added = false;
@@ -45,6 +59,7 @@ public class Completion_Window : MonoBehaviour
                 Shift_Entries(i);
                 level_Data.best_scores[i] = new Record(input_field.text, level_Data.Score);
                 Update_Leaderboard();
+                Save();
                 break;
             }
         }

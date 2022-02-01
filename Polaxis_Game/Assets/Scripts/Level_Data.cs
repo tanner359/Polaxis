@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 [CreateAssetMenu(fileName = "Level Data", menuName = "Level Data")]
+[System.Serializable]
 public class Level_Data : ScriptableObject
 {
     public bool isComplete;
@@ -40,4 +42,18 @@ public class Record{
         scorer_name = name;
         best_score = score;
     }
+}
+
+[System.Serializable]
+public class Level_Save_Package
+{
+    public string level;
+    public Record[] leaderboards;
+
+    public Level_Save_Package(Level_Data data)
+    {
+        leaderboards = data.best_scores;
+        level = data.name;
+    }
+
 }

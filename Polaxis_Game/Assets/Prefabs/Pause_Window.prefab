@@ -953,7 +953,6 @@ GameObject:
   - component: {fileID: 3051227290518552294}
   - component: {fileID: 3051227290518552280}
   - component: {fileID: 3051227290518552295}
-  - component: {fileID: 3051227290518552289}
   m_Layer: 5
   m_Name: Pause_Window
   m_TagString: Untagged
@@ -1023,22 +1022,3 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3051227290518552289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3051227290518552293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83c6edb271982fd45a438a9f0caea238, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  magnet_count: {fileID: 0}
-  time_completed: {fileID: 0}
-  new_record: {fileID: 0}
-  leaderboard_container: {fileID: 0}
-  entry_prefab: {fileID: 978828024457224618, guid: 60e5aaf42e663a94083ce84ee2eb21cf, type: 3}
-  input_field: {fileID: 0}
