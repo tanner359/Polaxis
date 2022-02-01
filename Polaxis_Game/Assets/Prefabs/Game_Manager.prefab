@@ -46,8 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level_Data: {fileID: 11400000, guid: b6bc9d5f316d62e429e62a129018aba6, type: 2}
   timer: {fileID: 0}
-  Completion_Window: {fileID: 0}
-  Pause_Window: {fileID: 0}
+  comp_window: {fileID: 0}
+  pause_window: {fileID: 0}
   main_cam: {fileID: 0}
   flag_cam: {fileID: 0}
   next_level: Level_02

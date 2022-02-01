@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class Trash : MonoBehaviour
 {
+    private Level_Data level_data;
     public Animator animator;
     public LayerMask destroyable;
 
     public float detection_range = 1;
+
+    private void Start()
+    {
+        level_data = Game_Manager.instance.Level_Data;
+    }
 
     private void Update()
     {
@@ -18,6 +24,7 @@ public class Trash : MonoBehaviour
             {
                 Destroy(c.gameObject);
                 animator.SetTrigger("Pulse");
+                level_data.Magnet_Count -= 1;
             }
         }
     }

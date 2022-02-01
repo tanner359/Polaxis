@@ -1205,16 +1205,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 831244364605007295}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: Load_Level
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Main_Menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &8267997472289281437
@@ -1443,6 +1443,8 @@ GameObject:
   - component: {fileID: 8267997472685262267}
   - component: {fileID: 8267997472685262213}
   - component: {fileID: 8267997472685262266}
+  - component: {fileID: 8768223817150225932}
+  - component: {fileID: 831244364605007295}
   m_Layer: 5
   m_Name: Completion_Window
   m_TagString: Untagged
@@ -1515,6 +1517,38 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8768223817150225932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8267997472685262264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c6edb271982fd45a438a9f0caea238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level_Data: {fileID: 0}
+  score: {fileID: 8267997471893644662}
+  magnet_count: {fileID: 8267997473481055417}
+  time_completed: {fileID: 8267997473193399033}
+  new_record: {fileID: 8267997473237649164}
+  leaderboard_container: {fileID: 8267997471754556941}
+  entry_prefab: {fileID: 978828024457224618, guid: 60e5aaf42e663a94083ce84ee2eb21cf, type: 3}
+  input_field: {fileID: 8267997472873339638}
+--- !u!114 &831244364605007295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8267997472685262264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c50a897188b96a4f970d9849c2b9cad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8267997472762523411
 GameObject:
   m_ObjectHideFlags: 0
@@ -1637,13 +1671,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 8768223817150225932}
+        m_TargetAssemblyTypeName: Completion_Window, Assembly-CSharp
+        m_MethodName: Next_Level
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1947,16 +1981,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 831244364605007295}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: Load_Level
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level_Select
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &8267997473193399039

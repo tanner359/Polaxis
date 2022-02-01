@@ -13,7 +13,9 @@ public class Game_Manager : MonoBehaviour
     public Level_Data Level_Data;
     public TMP_Text timer;
     private Controls controls;
-    public GameObject Completion_Window, Pause_Window;
+    public Completion_Window comp_window;
+    public Pause_Window pause_window;
+
     public GameObject main_cam, flag_cam;
 
     public string next_level;
@@ -31,7 +33,7 @@ public class Game_Manager : MonoBehaviour
 
     private void Request_Pause(InputAction.CallbackContext obj)
     {
-        if (!Pause_Window) { return; }
+        if (!pause_window) { return; }
         if(Time.timeScale == 0)
         {
             Resume_Game();
@@ -69,7 +71,7 @@ public class Game_Manager : MonoBehaviour
             {
                 Level_Data.Completion_Time = time;
                 yield return new WaitForSeconds(4.5f);
-                Completion_Window.SetActive(true);
+                comp_window.gameObject.SetActive(true);
                 break;
             }
             time += Time.deltaTime;
@@ -109,36 +111,18 @@ public class Game_Manager : MonoBehaviour
 
     public void Pause_Game()
     {
-        Pause_Window.SetActive(true);
-        Time.timeScale = 0;
+        pause_window.gameObject.SetActive(true);
     }
-
-    public void Exit_Application()
-    {
-        Application.Quit();
-    }
-
     public void Resume_Game()
     {
-        Pause_Window.SetActive(false);
-        Time.timeScale = 1;
+        pause_window.gameObject.SetActive(false);
     }
 
-    public void Load_Level(string name)
-    {
-        SceneManager.LoadScene(name);
-    }
-
-    public void Level_Select()
-    {
-        SceneManager.LoadScene("Level_Select");
-    }
 
     private void OnDisable()
     {
         controls.Player.Reset.Disable();
         controls.Player.Pause.Disable();
         Level_Data.Magnet_Count = 0;
-        Time.timeScale = 1;
     }
 }
