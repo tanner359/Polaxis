@@ -114,7 +114,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: OrangeCubes_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 550
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d5cb3ce37fe7b34dbaa429023be6ac1
+      internalID: -411724084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeCubes_1
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 0
+        width: 550
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1ff7e0c09db2648bdaaccd9ae49c0b
+      internalID: -1259319229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeCubes_2
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 0
+        width: 550
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a78c01c732d9d640a2eedddb1322977
+      internalID: 1501584736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -125,7 +188,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      OrangeCubes_2: 1501584736
+      OrangeCubes_1: -1259319229
+      OrangeCubes_0: -411724084
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

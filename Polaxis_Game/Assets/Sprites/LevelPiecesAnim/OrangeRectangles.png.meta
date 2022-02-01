@@ -114,7 +114,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: OrangeRectangles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d83de6ac92c81548b19dfc2a5fc6b8b
+      internalID: -912787680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeRectangles_1
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 1500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2717640dce5cbc5408fbba8d57ab4937
+      internalID: 1033943523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeRectangles_2
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 1500
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af43548338563de488278687692a3a82
+      internalID: 539460327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -125,7 +188,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      OrangeRectangles_1: 1033943523
+      OrangeRectangles_2: 539460327
+      OrangeRectangles_0: -912787680
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
