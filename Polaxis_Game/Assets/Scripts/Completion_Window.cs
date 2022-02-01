@@ -48,6 +48,11 @@ public class Completion_Window : MonoBehaviour
         level_Data.best_scores = data.leaderboards;
     }
 
+    public void Next_Level()
+    {
+        Game_Manager.instance.Next_Level();
+    }
+
     bool entry_added = false;
     public void Add_Entry()
     {

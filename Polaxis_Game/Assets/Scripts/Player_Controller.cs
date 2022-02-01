@@ -41,10 +41,9 @@ public class Player_Controller : MonoBehaviour, IControllable
     {
         while(obj != null)
         {
-            obj.transform.position = Vector2.Lerp(obj.transform.position, trash.transform.position, 0.02f);
+            obj.transform.position = Vector2.Lerp(obj.transform.position, trash.transform.position, 0.04f);
             yield return new WaitForEndOfFrame();
         }
-        level_data.Magnet_Count -= 1;
     }
 
     private void Start()
