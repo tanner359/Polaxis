@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3375290247196904224}
   - component: {fileID: 8892800845601938173}
   - component: {fileID: 5882652575557696070}
+  - component: {fileID: 7057450032293994653}
   m_Layer: 0
   m_Name: BlueL
   m_TagString: Untagged
@@ -138,3 +139,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.1985087, y: 1.0737321}
   m_EdgeRadius: 0
+--- !u!95 &7057450032293994653
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3431541355425120800}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f329841c5506d14eb1f976dbdb55a7e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
