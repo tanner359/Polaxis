@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8283c0f0d4034bd42b5c829bf47edf19, type: 3}
   m_Name: Level_06_Settings
   m_EditorClassIdentifier: 
-  isComplete: 1
+  isComplete: 0
   Positive_Prefab: {fileID: 5367913955393829120, guid: 0ee7a188050712d4fb8cd74dfd59c281, type: 3}
   Negative_Prefab: {fileID: 3024422664823158701, guid: 115d2bb916704e34289f88dbcb7a9180, type: 3}
-  Magnet_Limit: 14
+  Magnet_Limit: 12
   Magnet_Count: 0
-  max_time: 20
+  max_time: 15
   Max_Score: 10000
   Node_Penalty: 100
   Time_Penalty: 200
