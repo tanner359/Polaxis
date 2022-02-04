@@ -17,7 +17,7 @@ MonoBehaviour:
   Negative_Prefab: {fileID: 3024422664823158701, guid: 115d2bb916704e34289f88dbcb7a9180, type: 3}
   Magnet_Limit: 15
   Magnet_Count: 0
-  max_time: 20
+  max_time: 12
   Max_Score: 10000
   Node_Penalty: 100
   Time_Penalty: 200
