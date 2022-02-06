@@ -7,6 +7,7 @@ public class Magnet : MonoBehaviour
     public float polar_force = 1f;
     public float range = 1f;
     public bool show_range;
+    public Transform magnet_range;
     public LayerMask targetable;
     public enum Polarity {Positive, Negative};
     public Polarity polarity;
@@ -63,8 +64,9 @@ public class Magnet : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        if (show_range)
+        if (show_range && magnet_range)
         {
+            magnet_range.localScale = Vector3.one * (range/3.35f);
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(transform.position, range);
         }
