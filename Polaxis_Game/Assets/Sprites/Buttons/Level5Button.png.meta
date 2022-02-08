@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e8bdfad0986f34e42aff3c880fa8d937
+guid: 41779ddd6d9daa54798d31bcee31cde3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ResumeButtonAnim_0
+      name: Level5Button_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 1000
-        height: 650
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 448bc28604e033c4db092beb6737397c
-      internalID: 806944435
+      spriteID: 578b6ef29248965449d842b82c617c96
+      internalID: 1917520702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ResumeButtonAnim_1
+      name: Level5Button_1
       rect:
         serializedVersion: 2
         x: 1000
         y: 0
         width: 1000
-        height: 650
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff481fafd45708f49a862aa070949dd5
-      internalID: 499832516
+      spriteID: e7e0a72e66d239a4681c9a6ae0d8e41f
+      internalID: -1812357696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ResumeButtonAnim_2
+      name: Level5Button_2
       rect:
         serializedVersion: 2
         x: 2000
         y: 0
         width: 1000
-        height: 650
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,8 +160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f8431bdb4adf054d9ba7b6f00a04a48
-      internalID: -750566385
+      spriteID: beac09be43ffe35499b5e85a3428ce6e
+      internalID: -1241477491
       vertices: []
       indices: 
       edges: []
@@ -177,9 +177,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ResumeButtonAnim_2: -750566385
-      ResumeButtonAnim_1: 499832516
-      ResumeButtonAnim_0: 806944435
+      Level5Button_0: 1917520702
+      Level5Button_2: -1241477491
+      Level5Button_1: -1812357696
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

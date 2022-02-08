@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ResumeButton
+  m_Name: Level5Button
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 806944435, guid: e8bdfad0986f34e42aff3c880fa8d937, type: 3}
+      value: {fileID: 1917520702, guid: 41779ddd6d9daa54798d31bcee31cde3, type: 3}
     - time: 0.5833333
-      value: {fileID: 499832516, guid: e8bdfad0986f34e42aff3c880fa8d937, type: 3}
+      value: {fileID: -1812357696, guid: 41779ddd6d9daa54798d31bcee31cde3, type: 3}
     - time: 1.1666666
-      value: {fileID: -750566385, guid: e8bdfad0986f34e42aff3c880fa8d937, type: 3}
+      value: {fileID: -1241477491, guid: 41779ddd6d9daa54798d31bcee31cde3, type: 3}
     - time: 1.75
-      value: {fileID: 806944435, guid: e8bdfad0986f34e42aff3c880fa8d937, type: 3}
+      value: {fileID: 1917520702, guid: 41779ddd6d9daa54798d31bcee31cde3, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,10 +46,10 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 806944435, guid: e8bdfad0986f34e42aff3c880fa8d937, type: 3}
-    - {fileID: 499832516, guid: e8bdfad0986f34e42aff3c880fa8d937, type: 3}
-    - {fileID: -750566385, guid: e8bdfad0986f34e42aff3c880fa8d937, type: 3}
-    - {fileID: 806944435, guid: e8bdfad0986f34e42aff3c880fa8d937, type: 3}
+    - {fileID: 1917520702, guid: 41779ddd6d9daa54798d31bcee31cde3, type: 3}
+    - {fileID: -1812357696, guid: 41779ddd6d9daa54798d31bcee31cde3, type: 3}
+    - {fileID: -1241477491, guid: 41779ddd6d9daa54798d31bcee31cde3, type: 3}
+    - {fileID: 1917520702, guid: 41779ddd6d9daa54798d31bcee31cde3, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
