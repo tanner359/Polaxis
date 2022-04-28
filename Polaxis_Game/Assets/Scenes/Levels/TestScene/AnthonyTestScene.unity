@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 373663795}
   - component: {fileID: 373663794}
   m_Layer: 0
-  m_Name: Level5Button_0
+  m_Name: Level5Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 405218287}
   - component: {fileID: 405218286}
   m_Layer: 0
-  m_Name: Level7Button_0
+  m_Name: Level7Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -463,7 +463,7 @@ GameObject:
   - component: {fileID: 694936158}
   - component: {fileID: 694936157}
   m_Layer: 0
-  m_Name: Level4Button_0
+  m_Name: Level4Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -568,7 +568,7 @@ GameObject:
   - component: {fileID: 750335721}
   - component: {fileID: 750335720}
   m_Layer: 0
-  m_Name: Level6Button_0
+  m_Name: Level6Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -673,7 +673,7 @@ GameObject:
   - component: {fileID: 1305423028}
   - component: {fileID: 1305423027}
   m_Layer: 0
-  m_Name: Level10Button_0
+  m_Name: Level10Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -883,7 +883,7 @@ GameObject:
   - component: {fileID: 1792715118}
   - component: {fileID: 1792715117}
   m_Layer: 0
-  m_Name: Level8Button_0
+  m_Name: Level8Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -988,7 +988,7 @@ GameObject:
   - component: {fileID: 1806319006}
   - component: {fileID: 1806319005}
   m_Layer: 0
-  m_Name: Level9Button_0
+  m_Name: Level9Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
