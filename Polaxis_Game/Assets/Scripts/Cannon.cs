@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Cannon : MonoBehaviour, IReset
-{
+{   
     private Controls controls;
     public Animator animator;
 

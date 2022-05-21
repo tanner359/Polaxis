@@ -36,7 +36,6 @@ public class Player_Controller : MonoBehaviour, IControllable
         RaycastHit2D hit = Physics2D.Raycast(target, Vector3.forward * 1, 1f, Movable);
         if (hit.collider) { StartCoroutine(Delete(hit.collider.gameObject)); }
     }
-
     private IEnumerator Delete(GameObject obj)
     {
         while(obj != null)
@@ -62,21 +61,18 @@ public class Player_Controller : MonoBehaviour, IControllable
         RaycastHit2D hit = Physics2D.Raycast(target, Vector3.forward * 1, 1f);
         if (holding) {holding = null;}
     }
-
     private void Request_Pickup(InputAction.CallbackContext obj)
     {
         Vector2 target = Camera.main.ScreenToWorldPoint(controls.Player.Pointer.ReadValue<Vector2>());
         RaycastHit2D hit = Physics2D.Raycast(target, Vector3.forward * 1, 1f, Movable);
         if (hit.collider) { holding = hit.collider.gameObject; }
     }
-
     private void Move_Item()
     {
         if (!holding) { return; }
         Vector2 target = Camera.main.ScreenToWorldPoint(controls.Player.Pointer.ReadValue<Vector2>());
         holding.transform.position = Vector3.Lerp(holding.transform.position, target, 0.2f);
     }
-
     private void Request_Negative_Spawn(InputAction.CallbackContext context)
     {
         if (level_data.Magnet_Count < level_data.Magnet_Limit)
@@ -86,7 +82,6 @@ public class Player_Controller : MonoBehaviour, IControllable
             level_data.Magnet_Count += 1;
         }
     }
-
     private void Request_Positive_Spawn(InputAction.CallbackContext context)
     {
         if (level_data.Magnet_Count < level_data.Magnet_Limit)
