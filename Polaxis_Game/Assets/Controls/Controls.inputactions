@@ -111,6 +111,17 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "",
+                    "id": "7623dfb4-634c-4011-82fe-e08407a77c6f",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left_Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "2D Vector",
                     "id": "bb811e30-928a-4791-ace4-8f3cc8c386d2",
                     "path": "2DVector",
@@ -178,8 +189,30 @@
                 },
                 {
                     "name": "",
+                    "id": "bdba065e-ebed-4780-bcb7-8b9545d4f548",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "4ea41da3-2b25-4006-b05f-517cac32ee8b",
                     "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Space",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ae273fe2-8e1c-4285-80d4-f191fedb943c",
+                    "path": "<Gamepad>/buttonWest",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -200,6 +233,17 @@
                 },
                 {
                     "name": "",
+                    "id": "da654b74-b7a7-428d-b8fe-5cd9dfa3d2cf",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Spawn_Positive",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "f8313e18-d080-44cc-a414-2682adc755ab",
                     "path": "<Keyboard>/2",
                     "interactions": "",
@@ -211,8 +255,30 @@
                 },
                 {
                     "name": "",
+                    "id": "f358b6d9-3e2f-49c7-a55f-ce363be39218",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Spawn_Negative",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "efb3285a-42b0-4db4-98fd-bcbda67dd450",
                     "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9e5484d3-0acf-478b-b56e-aa6d7f7d5b39",
+                    "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
