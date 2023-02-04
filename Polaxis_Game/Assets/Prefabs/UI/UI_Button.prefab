@@ -335,4 +335,4 @@ MonoBehaviour:
   - {fileID: 190332469, guid: 3f6cdc63d703d984abc0651f0fac778e, type: 3}
   - {fileID: 115320687, guid: 3f6cdc63d703d984abc0651f0fac778e, type: 3}
   - {fileID: -1539686080, guid: 3f6cdc63d703d984abc0651f0fac778e, type: 3}
-  speed: 0.5
+  speed: 0.7

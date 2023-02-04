@@ -21,9 +21,9 @@ public class Static_Animator : MonoBehaviour
 
     private int i;
     private float t;
-
+   
     private void LateUpdate(){
-        t += Time.deltaTime;
+        t += Time.unscaledDeltaTime;
         if(t>=speed){
             if(srTarget != null){
                 srTarget.sprite = images[i];

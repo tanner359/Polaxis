@@ -350,7 +350,7 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 1
 --- !u!95 &1193494128
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -367,7 +367,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &206716403303387211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1012,11 +1012,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3051227290518552294, guid: 1bc8b831dfe8f3b48871c73d77726462, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 641.7
+      value: 550
       objectReference: {fileID: 0}
     - target: {fileID: 3051227290518552294, guid: 1bc8b831dfe8f3b48871c73d77726462, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 600
+      value: 750
       objectReference: {fileID: 0}
     - target: {fileID: 3051227290518552294, guid: 1bc8b831dfe8f3b48871c73d77726462, type: 3}
       propertyPath: m_LocalPosition.x

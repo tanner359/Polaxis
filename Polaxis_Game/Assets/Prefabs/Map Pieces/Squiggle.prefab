@@ -13,13 +13,13 @@ GameObject:
   - component: {fileID: 6345272234032677678}
   - component: {fileID: 8924854428480582685}
   - component: {fileID: 3959364929659566894}
-  - component: {fileID: 2101329194783729319}
+  - component: {fileID: 316174415064690451}
   m_Layer: 0
   m_Name: Squiggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &9072166856026719206
 Transform:
@@ -166,23 +166,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3863604, y: 3.657898}
   m_EdgeRadius: 0
---- !u!95 &2101329194783729319
-Animator:
-  serializedVersion: 4
+--- !u!114 &316174415064690451
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6295598315456450905}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4d62c1ed152e49049804271fb381399a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 122c8925f12a55641b0001037777d1b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  images:
+  - {fileID: 235309495, guid: 1fe2b519917dd52409a55fef8a5b021f, type: 3}
+  - {fileID: 455640837, guid: 1fe2b519917dd52409a55fef8a5b021f, type: 3}
+  - {fileID: -922676098, guid: 1fe2b519917dd52409a55fef8a5b021f, type: 3}
+  speed: 0.7

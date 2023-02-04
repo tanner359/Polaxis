@@ -13,8 +13,14 @@ public class Cannon : MonoBehaviour, IReset
     public float power;
 
     private GameObject active_ball;
+    private AudioSource soundFX;
 
     private void Awake()
+    {
+        soundFX = GetComponent<AudioSource>();
+    }
+
+    private void OnEnable()
     {
         controls = controls == null ? new Controls() : controls;
         controls.Player.Space.performed += Request_Cannon_Fire;
@@ -30,6 +36,7 @@ public class Cannon : MonoBehaviour, IReset
 
     private void Fire_Cannon()
     {
+        if (soundFX) { soundFX.pitch = Random.Range(1.10f, 1.30f); soundFX.Play(); }
         active_ball = Instantiate(ammo, barrel.position, Quaternion.identity);
         active_ball.GetComponent<Rigidbody2D>().AddForce(transform.up * (power * 100), ForceMode2D.Force);
     }
@@ -38,5 +45,10 @@ public class Cannon : MonoBehaviour, IReset
     {
         Destroy(active_ball);
         controls.Player.Space.Enable();
+    }
+
+    public void OnDisable()
+    {
+        controls.Player.Space.Disable();
     }
 }
