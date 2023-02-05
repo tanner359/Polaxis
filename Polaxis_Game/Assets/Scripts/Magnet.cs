@@ -14,10 +14,12 @@ public class Magnet : MonoBehaviour
 
     private Controls controls;
 
+    private AudioSource audioSource;
 
     private void Awake()
     {
         controls = controls == null ? new Controls() : controls;
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void FixedUpdate()
@@ -50,15 +52,26 @@ public class Magnet : MonoBehaviour
         }
     }
 
+    public float audioTime;
     private void Target_Search()
     {
         Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, range, targetable);
         if(targets.Length > 0)
         {
+            Play_Audio();
             foreach (Collider2D c in targets)
             {
                 Calculate_Force(c.attachedRigidbody);
             }
+        }
+    }
+
+    private void Play_Audio()
+    {
+        if (!audioSource.isPlaying) 
+        {
+            audioSource.pitch = Random.Range(1.2f, 1.4f); 
+            audioSource.Play(); 
         }
     }
 
