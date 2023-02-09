@@ -52,25 +52,33 @@ public class Magnet : MonoBehaviour
         }
     }
 
-    public float audioTime;
+    private int numTargets = 0;
     private void Target_Search()
     {
         Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, range, targetable);
         if(targets.Length > 0)
         {
-            Play_Audio();
             foreach (Collider2D c in targets)
             {
                 Calculate_Force(c.attachedRigidbody);
             }
+            if(numTargets < targets.Length){
+                Play_Audio();             
+            }
+            numTargets = targets.Length;
+        }
+        else
+        {
+            numTargets = 0;
         }
     }
 
     private void Play_Audio()
     {
+        float audioTime = audioSource.time/audioSource.clip.length;
         if (!audioSource.isPlaying) 
         {
-            audioSource.pitch = Random.Range(1.2f, 1.4f); 
+            audioSource.pitch = Random.Range(1.2f, 1.5f);
             audioSource.Play(); 
         }
     }
