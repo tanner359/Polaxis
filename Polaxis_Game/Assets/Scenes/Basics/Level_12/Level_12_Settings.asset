@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Level_12_Settings
   m_EditorClassIdentifier: 
   isComplete: 1
-  Positive_Prefab: {fileID: 5367913955393829120, guid: 0ee7a188050712d4fb8cd74dfd59c281, type: 3}
-  Negative_Prefab: {fileID: 3024422664823158701, guid: 115d2bb916704e34289f88dbcb7a9180, type: 3}
+  Positive_Prefab: {fileID: 3706158209830193138, guid: 82052c2087219094f8114ef91383f858, type: 3}
+  Negative_Prefab: {fileID: 611357944096097886, guid: b976733ec5e284c40a8cddf823334381, type: 3}
   Magnet_Limit: 16
   Magnet_Count: 0
   max_time: 12

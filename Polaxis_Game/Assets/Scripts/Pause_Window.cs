@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class Pause_Window : MonoBehaviour
+public class Pause_Window : Polaxis_UI
 {
-    private void OnEnable()
+    private new void OnEnable()
     {
+        base.OnEnable();
         Time.timeScale = 0;
     }
 

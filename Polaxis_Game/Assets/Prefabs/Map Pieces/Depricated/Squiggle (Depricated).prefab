@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1650895241917949536}
   - component: {fileID: 7731483408685971250}
   - component: {fileID: 3348694169431164371}
-  - component: {fileID: 1900207656032991446}
   m_Layer: 0
   m_Name: Squiggle (Depricated)
   m_TagString: Untagged
@@ -78,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: b86e805fb632bbf4392ebc187b6f817b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.16862746}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -166,23 +165,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3159771, y: 3.0198221}
   m_EdgeRadius: 0
---- !u!95 &1900207656032991446
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7997539059404279822}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4d62c1ed152e49049804271fb381399a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0

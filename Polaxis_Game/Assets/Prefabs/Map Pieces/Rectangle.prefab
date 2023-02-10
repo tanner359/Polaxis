@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 179192929726586066}
   - component: {fileID: 5365192959648723142}
   - component: {fileID: 8731284084096002214}
-  - component: {fileID: 7466058432278379548}
+  - component: {fileID: -3689615102849039671}
   m_Layer: 0
   m_Name: Rectangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &179192929726586066
 Transform:
@@ -112,23 +112,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.1871243, y: 0.9780495}
   m_EdgeRadius: 0
---- !u!95 &7466058432278379548
-Animator:
-  serializedVersion: 4
+--- !u!114 &-3689615102849039671
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2790197937862592373}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 68042d2d1df3e5f4ba39a778d47bb2dd, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 122c8925f12a55641b0001037777d1b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  images:
+  - {fileID: -45562175, guid: 2bf636af1f99a044cae31b44ccdeba7a, type: 3}
+  - {fileID: 2125551390, guid: 2bf636af1f99a044cae31b44ccdeba7a, type: 3}
+  - {fileID: -1496236635, guid: 2bf636af1f99a044cae31b44ccdeba7a, type: 3}
+  speed: 0.7
