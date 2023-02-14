@@ -109,6 +109,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   polarity: 0
+  spawnSound: {fileID: 8300000, guid: da7833f2732664d42a109484270256e5, type: 3}
 --- !u!58 &-1639143289559145970
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -153,7 +154,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: af177b0ec58025e47bba192f2669ef2c, type: 2}
   m_audioClip: {fileID: 8300000, guid: 546dfbe39cb8eba41acfdb6a6140cc72, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1
   Loop: 0

@@ -15,11 +15,18 @@ public class Magnet : MonoBehaviour
     private Controls controls;
 
     private AudioSource audioSource;
+    public AudioClip spawnSound;
 
     private void Awake()
     {
         controls = controls == null ? new Controls() : controls;
         audioSource = GetComponent<AudioSource>();
+    }
+
+    private void Start()
+    {
+        audioSource.pitch = Random.Range(0.9f, 1.1f);
+        audioSource.PlayOneShot(spawnSound);
     }
 
     private void FixedUpdate()
